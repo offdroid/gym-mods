@@ -9,7 +9,6 @@ class CartPoleAbsDistFromOpt(gym.Wrapper):
         Args:
             env (gym.Env): CartPole environment
         """
-        assert isinstance(env, gym.envs.classic_control.CartPoleEnv)
         super().__init__(env)
         self.env = env
 
