@@ -3,7 +3,7 @@ import gym
 from gym_mods.wrappers import *
 
 
-def register_cartpole(max_length: int):
+def register_cartpole(max_length: int = 3000):
     assert max_length > 0
     gym.envs.registration.register(
         id="CartPole-v3",
