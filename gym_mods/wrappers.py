@@ -33,7 +33,7 @@ class PassiveWrapper(gym.Wrapper):
         self.env = env
 
     def reset(self, **_):
-        raise RuntimeError("Illegal operation")
+        return None
 
     def step(self, _):
         raise RuntimeError("Illegal operation")
